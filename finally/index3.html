@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Nadyaa affriliyani</title>
+  <!-- CDN Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Konfigurasi Warna Cream & Soft Pink -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: {
+              50: '#FFFEFA',
+              100: '#FDF8F2',
+              200: '#F6EFE6',
+            },
+            softpink: {
+              50: '#FFF0F5',
+              100: '#FDE2EE',
+              200: '#FAC8DE',
+              400: '#F472B6',
+              500: '#EC4899',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-grid-pattern {
+      background-size: 32px 32px;
+      background-image: radial-gradient(circle, #fbcfe8 1.2px, transparent 1.2px);
+    }
+  </style>
+</head>
+<body class="bg-cream-50 text-slate-700 font-sans antialiased bg-grid-pattern pb-20 md:pb-0">
+
+  <!-- DESKTOP NAVBAR -->
+  <nav class="hidden md:flex fixed top-0 left-0 w-full bg-cream-50/90 backdrop-blur-md border-b border-softpink-100 z-50 justify-between items-center px-8 py-4 max-w-7xl mx-auto right-0">
+    <div class="flex items-center gap-3">
+      <span class="bg-softpink-500 text-white font-bold text-xl px-3 py-1 rounded-md shadow-sm">N.a</span>
+      <span class="font-extrabold text-lg tracking-wide uppercase text-slate-800">NADYAA<span class="text-softpink-500">_AFFRILIYANI.</span></span>
+    </div>
+    <div class="flex gap-8 text-sm font-semibold text-slate-600">
+      <a href="#profile" class="hover:text-softpink-500 transition-colors">Home</a>
+      <a href="#about" class="hover:text-softpink-500 transition-colors">About</a>
+      <a href="#gallery" class="hover:text-softpink-500 transition-colors">Gallery</a>
+      <a href="#notes" class="hover:text-softpink-500 transition-colors">Notes</a>
+      <a href="#projects" class="hover:text-softpink-500 transition-colors">Projects</a>
+      <a href="#feedback" class="hover:text-softpink-500 transition-colors">Contact</a>
+    </div>
+  </nav>
+
+  <!-- MOBILE BOTTOM NAVBAR (Ala Instagram) -->
+  <div class="md:hidden fixed bottom-0 left-0 w-full bg-cream-50/95 backdrop-blur-md border-t border-softpink-100 z-50 flex justify-around items-center py-3 px-2 shadow-lg">
+    <a href="#profile" class="flex flex-col items-center text-slate-500 hover:text-softpink-500 transition-colors text-xs">
+      <i class="fas fa-home text-lg"></i>
+      <span class="mt-1">Home</span>
+    </a>
+    <a href="#about" class="flex flex-col items-center text-slate-500 hover:text-softpink-500 transition-colors text-xs">
+      <i class="fas fa-user text-lg"></i>
+      <span class="mt-1">About</span>
+    </a>
+    <a href="#gallery" class="flex flex-col items-center text-slate-500 hover:text-softpink-500 transition-colors text-xs">
+      <i class="fas fa-images text-lg"></i>
+      <span class="mt-1">Gallery</span>
+    </a>
+    <a href="#notes" class="flex flex-col items-center text-slate-500 hover:text-softpink-500 transition-colors text-xs">
+      <i class="fas fa-book-open text-lg"></i>
+      <span class="mt-1">Notes</span>
+    </a>
+    <a href="#projects" class="flex flex-col items-center text-slate-500 hover:text-softpink-500 transition-colors text-xs">
+      <i class="fas fa-layer-group text-lg"></i>
+      <span class="mt-1">Projects</span>
+    </a>
+    <a href="#feedback" class="flex flex-col items-center text-slate-500 hover:text-softpink-500 transition-colors text-xs">
+      <i class="fas fa-paper-plane text-lg"></i>
+      <span class="mt-1">Contact</span>
+    </a>
+  </div>
+
+  <!-- 1. PROFILE SECTION (Foto Kiri, Teks Kanan) -->
+  <section id="profile" class="min-h-screen flex items-center justify-center pt-16 md:pt-0">
+    <div class="max-w-6xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-12 items-center gap-12">
+      <!-- Foto Melingkar di KIRI -->
+      <div class="md:col-span-5 flex justify-center order-2 md:order-1">
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-3 bg-white shadow-xl shadow-softpink-200/50 border border-softpink-100">
+          <img src="https://i.pinimg.com/736x/9e/b0/f0/9eb0f083c2a45725fb5d3c5651b66d36.jpg" alt="Profile Picture" class="w-full h-full object-cover rounded-full">
+        </div>
+      </div>
+
+      <!-- Teks di KANAN -->
+      <div class="md:col-span-7 space-y-6 order-1 md:order-2">
+        <p class="text-slate-500 font-medium text-lg">Hello, my name is</p>
+        <h1 class="text-5xl md:text-6xl font-black text-slate-800 tracking-tight leading-none">
+          Utsman <br> Annahdy.
+        </h1>
+        <p class="text-slate-600 text-lg md:text-xl font-medium">
+          . . . And I'm a junior <span class="bg-softpink-100 text-softpink-500 font-bold px-2.5 py-0.5 rounded-lg border border-softpink-200"></span> & <span class="bg-softpink-100 text-softpink-500 font-bold px-2.5 py-0.5 rounded-lg border border-softpink-200">Designer</span> .
+        </p>
+        <div class="w-16 h-1 bg-softpink-500 rounded"></div>
+        
+        <div class="flex items-center gap-4 pt-2">
+          <span class="text-softpink-400 font-light">//</span>
+          <a href="https://www.instagram.com/nadyaafrilliani/" class="w-10 h-10 rounded-xl bg-white border border-softpink-200 flex items-center justify-center text-slate-600 hover:bg-softpink-500 hover:text-white hover:border-softpink-500 transition-all shadow-sm">
+            <i class="fab fa-instagram text-lg"></i>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-xl bg-white border border-softpink-200 flex items-center justify-center text-slate-600 hover:bg-softpink-500 hover:text-white hover:border-softpink-500 transition-all shadow-sm">
+            <i class="fab fa-github text-lg"></i>
+          </a>
+          <span class="text-softpink-400 font-light">//</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT ME SECTION (Foto Tinggi 800 pas satu layar mobile) -->
+  <section id="about" class="min-h-screen flex items-center justify-center bg-cream-100/80 py-16">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <h2 class="text-3xl font-bold mb-8 text-center text-slate-800">About Me</h2>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <!-- Foto dengan tinggi diatur pas layar / h-[800px] -->
+        <div class="md:col-span-5 h-[100vh] md:h-[800px] w-full rounded-2xl overflow-hidden shadow-md border border-softpink-200">
+          <img src="https://i.pinimg.com/1200x/32/7c/c3/327cc3f836f3b880187fb781cdff828d.jpg" alt="About Photo" class="w-full h-full object-cover">
+        </div>
+        <div class="md:col-span-7 space-y-6">
+          <h3 class="text-2xl font-bold text-slate-800">Halo! Saya nadya affriliyani, seorang pelajar yang bersemangat.</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Saya fokus pada pembelajaran saat ini, terutama pelajaran tentang akutansi itu sangat menarik bagi saya.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-4">
+            <div class="p-4 bg-white rounded-xl border border-softpink-200 shadow-sm">
+              <h4 class="font-bold text-slate-800 mb-1">Pengalaman</h4>
+              <p class="text-sm text-slate-500">saya bisa membuat slem , kerajinan makrame dll  </p>
+            </div>
+            <div class="p-4 bg-white rounded-xl border border-softpink-200 shadow-sm">
+              <h4 class="font-bold text-slate-800 mb-1">Keahlian</h4>
+              <p class="text-sm text-slate-500">Masak , dan banyak lagi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. GALLERY SECTION -->
+  <section id="gallery" class="min-h-screen flex items-center justify-center py-16">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <h2 class="text-3xl font-bold mb-12 text-center text-slate-800">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="relative group rounded-2xl overflow-hidden shadow-md h-64 border border-softpink-200">
+          <img src="https://i.pinimg.com/1200x/6b/e4/83/6be483ec92879a1bbd04299bda81f6f7.jpg" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base text-softpink-100">pemandangan kota padang </h4>
+            <p class="text-xs text-slate-200">Suasana kota padang.</p>
+          </div>
+        </div>
+        <div class="relative group rounded-2xl overflow-hidden shadow-md h-64 border border-softpink-200">
+          <img src="https://i.pinimg.com/736x/1e/be/93/1ebe93907c1f64d804ea45b3b3ca9bb9.jpg" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base text-softpink-100">univeritas impian</h4>
+            <p class="text-xs text-slate-200">gambar bagian depa universitas.</p>
+          </div>
+        </div>
+        <div class="relative group rounded-2xl overflow-hidden shadow-md h-64 border border-softpink-200">
+          <img src="https://via.placeholder.com/500" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base text-softpink-100">Sketsa UI/UX</h4>
+            <p class="text-xs text-slate-200">Perencanaan tata letak sebelum dieksekusi.</p>
+          </div>
+        </div>
+        <div class="relative group rounded-2xl overflow-hidden shadow-md h-64 border border-softpink-200">
+          <img src="https://via.placeholder.com/500" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base text-softpink-100">Diskusi Tim</h4>
+            <p class="text-xs text-slate-200">Berbagi ide dan progres bersama rekan sejawat.</p>
+          </div>
+        </div>
+        <div class="relative group rounded-2xl overflow-hidden shadow-md h-64 border border-softpink-200">
+          <img src="https://via.placeholder.com/500" alt="Gallery 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base text-softpink-100">Kunjungan Pameran</h4>
+            <p class="text-xs text-slate-200">Mencari inspirasi visual dari berbagai karya seni.</p>
+          </div>
+        </div>
+        <div class="relative group rounded-2xl overflow-hidden shadow-md h-64 border border-softpink-200">
+          <img src="https://via.placeholder.com/500" alt="Gallery 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base text-softpink-100">Selesai Proyek</h4>
+            <p class="text-xs text-slate-200">Momen peluncuran website portofolio pertama.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. NOTES SECTION (CRUD Interaktif Tersimpan Online/Local) -->
+  <section id="notes" class="min-h-screen flex items-center justify-center bg-cream-100/80 py-16">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <h2 class="text-3xl font-bold mb-2 text-center text-slate-800">Catatan & Inspirasi</h2>
+      <p class="text-center text-slate-500 mb-6 text-sm">Pengunjung dapat menambah dan menghapus catatan secara langsung!</p>
+      
+      <!-- Form Tambah Catatan Baru -->
+      <form id="addNoteForm" class="bg-white p-5 rounded-2xl border border-softpink-200 shadow-sm mb-6 max-w-2xl mx-auto flex flex-col md:flex-row gap-3">
+        <select id="noteCategory" class="px-3 py-2 rounded-xl border border-softpink-200 bg-cream-50 text-xs text-slate-700 focus:outline-none focus:ring-2 focus:ring-softpink-400">
+          <option value="quote">Quotes</option>
+          <option value="hadits">Hadits/Dalil</option>
+          <option value="history">History/random</option>
+        </select>
+        <input type="text" id="noteContent" placeholder="Tuliskan catatan/kata-kata/dalil..." required class="flex-grow px-4 py-2 rounded-xl border border-softpink-200 text-xs text-slate-700 focus:outline-none focus:ring-2 focus:ring-softpink-400">
+        <input type="text" id="noteAuthor" placeholder="Penulis/Sumber" required class="w-full md:w-36 px-4 py-2 rounded-xl border border-softpink-200 text-xs text-slate-700 focus:outline-none focus:ring-2 focus:ring-softpink-400">
+        <button type="submit" class="px-5 py-2 bg-softpink-500 hover:bg-softpink-400 text-white font-bold rounded-xl text-xs transition-colors shadow-sm whitespace-nowrap">+ Tambah</button>
+      </form>
+
+      <!-- Filter Buttons -->
+      <div class="flex justify-center gap-2 mb-6 flex-wrap">
+        <button class="filter-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-softpink-500 text-white shadow-sm" data-filter="all">Semua</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-softpink-500 border border-softpink-200 hover:bg-softpink-50" data-filter="quote">Quotes</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-softpink-500 border border-softpink-200 hover:bg-softpink-50" data-filter="hadits">Hadits/Dalil</button>
+        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-softpink-500 border border-softpink-200 hover:bg-softpink-50" data-filter="history">History</button>
+      </div>
+
+      <!-- Container Daftar Catatan Dinamis -->
+      <div id="notesContainer" class="grid grid-cols-1 md:grid-cols-3 gap-5 max-h-[50vh] overflow-y-auto pr-2">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PROJECTS SECTION -->
+  <section id="projects" class="min-h-screen flex items-center justify-center py-16">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <h2 class="text-3xl font-bold mb-4 text-center text-slate-800">Projects & Progress</h2>
+      <p class="text-center text-slate-500 mb-8 text-sm">Kumpulan poster dan progres karya kreatif.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-h-[60vh] overflow-y-auto pr-2">
+        <div class="bg-white rounded-2xl overflow-hidden border border-softpink-200 shadow-sm flex flex-col">
+          <img src="https://via.placeholder.com/600x350" alt="Poster 1" class="w-full h-44 object-cover">
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-softpink-600 bg-softpink-100 px-2 py-0.5 rounded uppercase border border-softpink-200">Completed</span>
+              <h3 class="text-lg font-bold mt-2 text-slate-800">E-Commerce UI Poster</h3>
+              <p class="text-slate-600 text-xs mt-1">Desain antarmuka toko online modern dengan tata letak bersih.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-softpink-200 shadow-sm flex flex-col">
+          <img src="https://via.placeholder.com/600x350" alt="Poster 2" class="w-full h-44 object-cover">
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded uppercase border border-amber-200">In Progress</span>
+              <h3 class="text-lg font-bold mt-2 text-slate-800">Mobile Dashboard App</h3>
+              <p class="text-slate-600 text-xs mt-1">Aplikasi pemantau aktivitas harian berbasis web interaktif.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-softpink-200 shadow-sm flex flex-col">
+          <img src="https://via.placeholder.com/600x350" alt="Poster 3" class="w-full h-44 object-cover">
+          <div class="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-softpink-600 bg-softpink-100 px-2 py-0.5 rounded uppercase border border-softpink-200">Completed</span>
+              <h3 class="text-lg font-bold mt-2 text-slate-800">Landing Page Portfolio</h3>
+              <p class="text-slate-600 text-xs mt-1">Desain web portofolio personal dengan dukungan responsif penuh.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FEEDBACK SECTION (Aktif & Diterima Dinamis) -->
+  <section id="feedback" class="min-h-screen flex items-center justify-center bg-cream-100/80 py-16">
+    <div class="max-w-xl mx-auto px-6 w-full">
+      <h2 class="text-3xl font-bold mb-6 text-center text-slate-800">Kirim Feedback</h2>
+      <form id="feedbackForm" class="space-y-4 bg-white p-6 rounded-2xl border border-softpink-200 shadow-sm">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Nama</label>
+          <input type="text" id="nameInput" required placeholder="Masukkan nama kamu" class="w-full px-4 py-2.5 rounded-xl border border-softpink-200 focus:outline-none focus:ring-2 focus:ring-softpink-400 bg-cream-50 text-xs text-slate-700">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Pesan / Feedback</label>
+          <textarea id="messageInput" rows="3" required placeholder="Tuliskan tanggapanmu..." class="w-full px-4 py-2.5 rounded-xl border border-softpink-200 focus:outline-none focus:ring-2 focus:ring-softpink-400 bg-cream-50 text-xs text-slate-700"></textarea>
+        </div>
+        <button type="submit" class="w-full py-2.5 bg-softpink-500 hover:bg-softpink-400 text-white font-bold rounded-xl transition-colors shadow-md shadow-softpink-200 text-xs">Kirim Pesan</button>
+      </form>
+
+      <div class="mt-8">
+        <h3 class="text-sm font-bold mb-3 text-slate-800">Feedback Yang Diterima</h3>
+        <div id="feedbackList" class="space-y-3 max-h-40 overflow-y-auto pr-1">
+          <!-- Rendered via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hubungkan ke JS Terpisah -->
+  <script src="main.js"></script>
+</body>
+</html>
